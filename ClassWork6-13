@@ -1,0 +1,177 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\Test> ssh-keygen -t ed25519 -C "palmagarrett@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (C:\Users\Test/.ssh/id_ed25519): CourseWork
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in CourseWork.
+Your public key has been saved in CourseWork.pub.
+The key fingerprint is:
+SHA256:DJL4EEvymHDzChtIoXSEg2LsZClTeZGqpRqRKHsBucc palmagarrett@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|=*@+.o           |
+|&/o*o.           |
+|/**o+ .          |
+|*=E+ . o         |
+|oB...   S        |
+|= .              |
+|.o               |
+|.                |
+|                 |
++----[SHA256]-----+
+PS C:\Users\Test> \.ssh\id_rsa.pub
+\.ssh\id_rsa.pub : The term '\.ssh\id_rsa.pub' is not recognized as the name of a cmdlet, function, script file, or
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try
+again.
+At line:1 char:1
++ \.ssh\id_rsa.pub
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\.ssh\id_rsa.pub:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Test> cd C:\Users\Test\.ssh\id_rsa.pub
+cd : Cannot find path 'C:\Users\Test\.ssh\id_rsa.pub' because it does not exist.
+At line:1 char:1
++ cd C:\Users\Test\.ssh\id_rsa.pub
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Test\.ssh\id_rsa.pub:String) [Set-Location], ItemNotFoundExcep
+   tion
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\Test> echo "# CourseWork" >> README.md
+>> git init
+>> git add README.md
+>> git commit -m "first commit"
+>> git branch -M main
+>> git remote add origin https://github.com/Mort122/CourseWork.git
+>> git push -u origin main
+Initialized empty Git repository in C:/Users/Test/.git/
+[main (root-commit) 3f2b31f] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 241 bytes | 241.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Mort122/CourseWork.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\Test> git clone https://github.com/Mort/CourseWork.git
+fatal: destination path 'CourseWork' already exists and is not an empty directory.
+PS C:\Users\Test> ls
+
+
+    Directory: C:\Users\Test
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          5/9/2022   8:18 PM                .chrome
+d-----          5/9/2022   8:17 PM                .oldschool-launcher
+d-----          5/9/2022   8:17 PM                .osrsps
+d-----         2/24/2023  10:01 PM                .runelite
+d-----         6/13/2023  12:54 PM                .vscode
+d-r---         8/14/2020   1:38 PM                3D Objects
+d-----          1/5/2022   8:21 PM                ansel
+d-r---         8/14/2020   1:38 PM                Contacts
+d-r---         6/13/2023   6:48 PM                Desktop
+d-r---          6/6/2023   2:09 PM                Documents
+d-r---         6/13/2023   6:25 PM                Downloads
+d-r---         8/14/2020   1:38 PM                Favorites
+d-----          6/8/2023   1:50 PM                FileFolder
+d-r---         9/24/2018   8:50 PM                Google Drive
+d-----        11/24/2019   7:49 PM                jagexcache
+d-r---         8/14/2020   1:38 PM                Links
+d-r---         8/14/2020   1:38 PM                Music
+dar---          4/1/2022  10:22 PM                OneDrive
+d-----          1/7/2020   9:26 PM                OSBuddy
+d-r---         1/28/2023  10:28 PM                Pictures
+d-r---          1/5/2022   8:11 PM                Saved Games
+d-r---         8/14/2020   1:38 PM                Searches
+d-----          6/8/2023   1:27 PM                Users
+d-r---          7/5/2021   1:23 PM                Videos
+-a----         6/13/2023   6:30 PM             55 .gitconfig
+-a----         6/13/2023   6:30 PM             20 .lesshst
+-a----          6/6/2023   8:20 PM              0 abcdefg
+-a----         6/13/2023   6:41 PM            105 CourseWork.pub
+-a----         6/13/2023   6:41 PM            464 CourseWork0
+-a----         6/13/2023   7:19 PM             30 README.md
+-a----          6/6/2023   8:01 PM           2655 sshkeyfolder
+-a----          6/6/2023   8:01 PM            573 sshkeyfolder.pub
+
+
+PS C:\Users\Test> open .\README.md
+open : The term 'open' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ open .\README.md
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (open:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Test> open README.md
+open : The term 'open' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ open README.md
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (open:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Test> mkdir MyFirstRepo
+
+
+    Directory: C:\Users\Test
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/13/2023   7:39 PM                MyFirstRepo
+
+
+PS C:\Users\Test> cd MyFirstRepo
+PS C:\Users\Test\MyFirstRepo> git clone "https://github.com/Mort122/CourseWork"
+Cloning into 'CourseWork'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+PS C:\Users\Test\MyFirstRepo> ls
+
+
+    Directory: C:\Users\Test\MyFirstRepo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/13/2023   7:40 PM                CourseWork
+
+
+PS C:\Users\Test\MyFirstRepo> cd CourseWork
+PS C:\Users\Test\MyFirstRepo\CourseWork> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Test\MyFirstRepo\CourseWork> git add .\README.md
+PS C:\Users\Test\MyFirstRepo\CourseWork> git commit -m "My First Admit"
+[main 92b9e1e] My First Admit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\Test\MyFirstRepo\CourseWork> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Mort122/CourseWork
+   3f2b31f..92b9e1e  main -> main
+PS C:\Users\Test\MyFirstRepo\CourseWork>
